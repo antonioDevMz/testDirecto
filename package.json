@@ -1,0 +1,26 @@
+{
+  "name": "testdirecto",
+  "version": "1.0.0",
+  "description": "Prueba para Directo Telecom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonioDevMz/testDirecto.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Misael Antonio Martinez Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonioDevMz/testDirecto/issues"
+  },
+  "homepage": "https://github.com/antonioDevMz/testDirecto#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security"
+  }
+}
