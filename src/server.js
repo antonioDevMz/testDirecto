@@ -1,18 +1,17 @@
-const express   =   require("express");
-const app       =   express();
-const http      =   require('http');
-const server    =   http.createServer(app);
-const bodyPars  =   require('body-parser');
-const env       =   require('./environment');
-const routes    =   require('./routes');
+const express   = require("express");
+const app       = express();
+const http      = require('http');
+const server    = http.createServer(app);
+const bodyPars  = require('body-parser');
+const routes    = require('./routes');
+const { deploy: { port } } = require('./environment');
 
 //SERVER
 app.use(bodyPars.urlencoded({ extended: false }));
 app.use(bodyPars.json());
-app.use('/bambu', routes);
+app.use('/directo', routes);
+app.set('port', port);
 
-app.set('port', env.deploy.port);
-let port = app.get('port');
 server.listen(port, () => {
-    console.log(`server start on port ${env.deploy.port}`);
+    console.log(`server start on port ${port}`);
 });

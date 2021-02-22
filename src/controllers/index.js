@@ -1,8 +1,12 @@
-//UPLOAD IMG
-exports.algo = async (req, res) => {
-    
+
+const test = async (req, res) => {
     res.status(200).send({
         success: true,
-        message: 'Ok'    
+        message: 'todo chido'    
     });
+};
+
+
+module.exports = {
+    test
 };
